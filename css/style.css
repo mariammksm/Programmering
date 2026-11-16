@@ -1,12 +1,11 @@
 /* Grundinställningar och variabler */
 :root {
-   :root {
     --bg-color: #f7f6f2;
     --surface-color: #ffffff;
     --text-color: #1c1c1c;
-    --muted-text: #1c1c1c;
-    --accent-color: #1e2b24;
-    --accent-hover: #121a16;
+    --muted-text: #555555;
+    --accent-color: #2c3e35;
+    --accent-hover: #1d2923;
     --border-color: #e0ded8;
     --max-width: 1100px;
 }
@@ -108,7 +107,7 @@ main {
     color: #e8ecea;
 }
 
-.btn {
+..btn {
     display: inline-block;
     background-color: #ffffff;
     color: var(--accent-color);
