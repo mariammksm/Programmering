@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moderna japanska arkitekturen | Architectual Insight</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utforska modern japansk arkitektur, minimalism, ljus och rymd genom ikoniska byggnader och arkitekter.">
+    <title>Modern japansk arkitektur | Architectural Insight</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Sidhuvud med huvudnavigering -->
-  <header>
-    <nav aria-label="Huvudmeny">
-      <ul>
-       <li><a href="index.html">Start</a></li>
-        <li><a href="om.html">Om</a></li>
-        <li><a href="projekt.html">Ikoniska verk</a></li>
-        <li><a href="Kontakt.html">Kontakt &amp; Källor</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Architectural Insight</a>
+            <nav aria-label="Huvudmeny">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active" aria-current="page">Hem</a></li>
+                    <li><a href="om.html">Om arkitekturen</a></li>
+                    <li><a href="projekt.html">Ikoniska verk</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Huvudinnehåll -->
-  <main>
-    <h1>Mellan ljus, skugga och betong: den moderna japanska arkitekturen</h1>
-    
-    <section>
-      <h2>Där tradition möter framtid</h2>
-      <p>Modern japansk arkitektur handlar om mer än bara rena linjer och avskalade ytor. Det är en filosofi som bygger på samspelet mellan människa, rum och natur. Genom att förena urgammal träbyggnadstradition med modern teknik, som rå betong, glas och stål, har japanska arkitekter skapat en unik estetik som väcker uppmärksamhet världen över.
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Modern japansk arkitektur</h1>
+                <p class="lead">Där traditionellt hantverk möter brutalistisk betong, naturligt ljus och minimalistisk harmoni.</p>
+                <a href="projekt.html" class="btn">Utforska ikoniska verk</a>
+            </div>
+        </section>
 
-Här ligger fokus ofta på Ma – det tomma utrymmet mellan objekt – där stillhet, ljusinsläpp och skuggspel får ta plats och forma hur vi upplever ett rum.</p>
-      
-      <article>
-        <h3>Utforska hur traditionellt hantverk, minimalism och en djup respekt för naturen möts i samtida japansk byggnadskonst</h3>
-       <img src="images/Japanesearchitecture1.jpg" alt="Modern japansk arkitektur i trä och sten omgiven av grönska">
-      </article>
-    </section>
-  </main>
+        <section class="intro-section container">
+            <h2>Form, ljus och tomrum (Ma)</h2>
+            <p>Modern japansk arkitektur utmärker sig genom sin förmåga att sudda ut gränsen mellan inne och ute. Genom begreppet <em>Ma</em> – det medvetna tomrummet – skapas byggnader där skuggor, årstider och material får tala.</p>
+            
+            <div class="grid-3">
+                <article class="card">
+                    <img src="images/tadao-ando.jpg" alt="Minimalistisk betongvägg med naturligt ljusinsläpp i Church of the Light">
+                    <h3>Betong &amp; Ljus</h3>
+                    <p>Arkitekter som Tadao Ando förvandlar rå betong till ett levande material genom precist riktat dagsljus.</p>
+                </article>
 
-  <!-- Sidfot -->
-  <footer>
-    <p>&copy; 2026 Architectual Insights</p>
-  </footer>
+                <article class="card">
+                    <img src="images/kengo-kuma.jpg" alt="Modern träkonstruktion med sammanflätade bjälkar av Kengo Kuma">
+                    <h3>Trä &amp; Tradition</h3>
+                    <p>Kengo Kuma återupplivar uråldriga japanska träfogningstekniker i samtida kulturbyggnader.</p>
+                </article>
+
+                <article class="card">
+                    <img src="images/sanaa.jpg" alt="Tunn vit stål- och glaspaviljong i grönskande omgivning">
+                    <h3>Transparens &amp; Lätthet</h3>
+                    <p>Studion SANAA skapar viktlösa strukturer i glas och stål som smälter in i landskapet.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Architectural Insight. Webbdesignprojekt om modern japansk arkitektur.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
