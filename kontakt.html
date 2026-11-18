@@ -10,6 +10,9 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Länken gör det lättare att hoppa förbi menyn med tangentbord. -->
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+    <!-- Samma meny finns på alla fyra sidor. -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Architectural Insight</a>
@@ -17,36 +20,39 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="om.html">Om</a></li>
-                    <li><a href="projekt.html">Ikoniska verk</a></li>
+                    <li><a href="projekt.html">Bildstudier</a></li>
                     <li><a href="kontakt.html" class="active" aria-current="page">Kontakt &amp; Källor</a></li>
                 </ul>
             </nav>
+            <!-- Knappen visas när JavaScript är igång. -->
+            <button id="textstorlek" type="button" aria-pressed="false" hidden>Större text</button>
         </div>
     </header>
 
-    <main class="container intro-section">
+    <main id="innehall" tabindex="-1" class="container intro-section">
         <h1>Kontakt &amp; Källor</h1>
         
-        <section class="card" style="padding: 2rem; margin-top: 1.5rem;">
+        <section class="card content-card">
             <h2>Har du frågor? Tveka inte att kontakta mig!</h2>
-            <p style="margin-bottom: 1rem;">
+            <p>
                 <strong>E-post:</strong> 
-                <a href="mailto:mariam@architecturalinsight.se" style="color: var(--accent-color); text-decoration: underline;">mariam@architecturalinsight.se</a>
+                <a href="mailto:25maka11@suni.se">25maka11@suni.se</a>
             </p>
-            <p style="margin-bottom: 1.5rem; color: var(--muted-text);">Vänligen uppmärksamma att svar kan ta upp till 4 arbetsveckor.</p>
+            <p>Hör gärna av dig om du har frågor om webbprojektet.</p>
             
             <article>
-                <h3>Källor &amp; referenser</h3>
-                <ul style="margin: 0.5rem 0 1.5rem 1.25rem; color: var(--muted-text);">
-                    <li>Tadao Ando Architect &amp; Associates – Arkitekturhistorisk översikt</li>
-                    <li>Kengo Kuma and Associates – Materialitet och japansk trätradition</li>
-                    <li>SANAA (Kazuyo Sejima &amp; Ryue Nishizawa) – Transparens och samtida rumslighet</li>
+                <h3>Läs mer om arkitektur</h3>
+                <ul>
+                    <li><a href="https://www.pritzkerprize.com/laureates/1995">Tadao Ando – presentation hos Pritzkerpriset</a></li>
+                    <li><a href="https://kkaa.co.jp/en/">Kengo Kuma and Associates – arkitektkontorets webbplats</a></li>
                 </ul>
-                <img src="images/Japanesearchitecture4.jpg" alt="Modern japansk arkitektur med minimalistiska linjer och naturligt ljusinsläpp">
+                <p>Bilderna används för att diskutera form, material och ljus. De är inte identifierade som verk av arkitekterna i länkarna ovan.</p>
+                <img src="images/Japanesearchitecture4.jpg" alt="Täckt träveranda längs en trädgård med träd och stenar" width="840" height="600" loading="lazy">
             </article>
         </section>
     </main>
 
+    <!-- Sidfoten avslutar sidan. -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Architectural Insight. Webbdesignprojekt om modern japansk arkitektur.</p>
@@ -54,3 +60,5 @@
     </footer>
 </body>
 </html>
+
+

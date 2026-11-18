@@ -10,6 +10,9 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Länken gör det lättare att hoppa förbi menyn med tangentbord. -->
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+    <!-- Samma meny finns på alla fyra sidor. -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Architectural Insight</a>
@@ -17,29 +20,32 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="om.html" class="active" aria-current="page">Om</a></li>
-                    <li><a href="projekt.html">Ikoniska verk</a></li>
+                    <li><a href="projekt.html">Bildstudier</a></li>
                     <li><a href="kontakt.html">Kontakt &amp; Källor</a></li>
                 </ul>
             </nav>
+            <!-- Knappen visas när JavaScript är igång. -->
+            <button id="textstorlek" type="button" aria-pressed="false" hidden>Större text</button>
         </div>
     </header>
 
-    <main class="container intro-section">
+    <main id="innehall" tabindex="-1" class="container intro-section">
         <h1>Om projektet &amp; om mig</h1>
         
-        <section class="card" style="padding: 2rem; margin-top: 1.5rem;">
+        <section class="card content-card">
             <h2>Vem är jag?</h2>
-            <p style="margin-bottom: 1rem;">Jag heter Mariam Kasambula och studerar dubbla kandidatprogram inom Journalistik och digitala medier samt Digital affärsutveckling inom event och projekt vid Södertörns högskola. Jag har alltid fascinerats av hur fysiska miljöer påverkar oss och berättar historier utan ett enda ord.</p>
-            <p style="margin-bottom: 1.5rem;">Modern japansk arkitektur fångar just det – en balans mellan det råa och det poetiska, där minimalistisk betong möter varmt cederträ och genomtänkt ljusinsläpp.</p>
+            <p>Jag heter Mariam Kasambula och studerar dubbla kandidatprogram inom Journalistik och digitala medier samt Digital affärsutveckling inom event och projekt vid Södertörns högskola. Jag har alltid fascinerats av hur fysiska miljöer påverkar oss och berättar historier utan ett enda ord.</p>
+            <p>Modern japansk arkitektur fångar just det – en balans mellan det råa och det poetiska, där minimalistisk betong möter varmt cederträ och genomtänkt ljusinsläpp.</p>
             
             <article>
                 <h3>Designfilosofi och digitalt berättande</h3>
-                <p style="padding: 0 0 1.5rem 0;">Oavsett om jag arbetar med fotojournalistik, digitala plattformar eller webbdesign drivs jag av att skapa tydliga, estetiska och tillgängliga upplevelser för användaren.</p>
-                <img src="images/Japanesearchitecture2.jpg" alt="Modern japansk interiör med trappsteg i ljust trä, vit puts och mjukt ljusinsläpp">
+                <p>Oavsett om jag arbetar med fotojournalistik, digitala plattformar eller webbdesign drivs jag av att skapa tydliga, estetiska och tillgängliga upplevelser för användaren.</p>
+                <img src="images/Japanesearchitecture2.jpg" alt="Sovrum med träväggar, en rund säng och en stor trädstam" width="1000" height="500" loading="lazy">
             </article>
         </section>
     </main>
 
+    <!-- Sidfoten avslutar sidan. -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Architectural Insight. Webbdesignprojekt om modern japansk arkitektur.</p>

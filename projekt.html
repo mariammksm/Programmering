@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Utforska ikoniska verk inom modern japansk arkitektur, inklusive The Earth &amp; Flight House i Kamakura av Kenzo Matsui.">
-    <title>Ikoniska verk | Architectural Insight</title>
+    <meta name="description" content="En bildstudie av en svängd trappa, dagsljus och olika material.">
+    <title>Bildstudier | Architectural Insight</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Länken gör det lättare att hoppa förbi menyn med tangentbord. -->
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+    <!-- Samma meny finns på alla fyra sidor. -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Architectural Insight</a>
@@ -17,33 +20,37 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="om.html">Om</a></li>
-                    <li><a href="projekt.html" class="active" aria-current="page">Ikoniska verk</a></li>
+                    <li><a href="projekt.html" class="active" aria-current="page">Bildstudier</a></li>
                     <li><a href="kontakt.html">Kontakt &amp; Källor</a></li>
                 </ul>
             </nav>
+            <!-- Knappen visas när JavaScript är igång. -->
+            <button id="textstorlek" type="button" aria-pressed="false" hidden>Större text</button>
         </div>
     </header>
 
-    <main class="container intro-section">
-        <h1>Ikoniska verk</h1>
+    <main id="innehall" tabindex="-1" class="container intro-section">
+        <h1>Bildstudier</h1>
         
-        <section class="card" style="padding: 2rem; margin-top: 1.5rem;">
-            <h2>The Earth &amp; Flight House (Kamakura)</h2>
-            <p style="margin-bottom: 1rem;">Dolt i de skogsklädda kullarna utanför den historiska staden Kamakura ligger The Earth &amp; Flight House, ett privat hem som utmanar gränserna för hur tunga, råa material kan kännas fjäderlätta och organiska. Arkitekten Kenzo Matsui ville skapa en bostad som kändes som en naturlig förlängning av den underliggande jorden. Byggnaden är känd för sina massiva väggar av lokalt pressat tegel och ockrafärgad lera, som ger interiören en varm, grottliknande atmosfär.</p>
-            <p style="margin-bottom: 1.5rem;">Det mest spektakulära inslaget är den skulpturala betongtrappan. Som en böljande, flytande våg av betong och råa stålräcken strävar den uppåt mot ett dolt takfönster som släpper in ett dramatiskt, sirligt dagsljus. Längs trappstegen och på det råa golvet har Matsui, i samarbete med en lokal skulptör, placerat en lekfull och ikonisk detalj: en familj av små bronsankor som ser ut att vandra uppåt. Det är en konstnärlig och poetisk påminnelse om att arkitektur inte bara handlar om geometri, utan om att bjuda in liv, rörelse och en gnutta magi i vardagen.</p>
-            
-            <article>
-                <h3>Fakta om byggnaden</h3>
-                <ul style="margin: 0.5rem 0 1.5rem 1.25rem; color: var(--muted-text);">
-                    <li><strong>Arkitekt:</strong> Kenzo Matsui / Matsui &amp; Associates</li>
-                    <li><strong>Färdigställt:</strong> 2018</li>
-                    <li><strong>Material:</strong> Gjuten betong, lokal röd lera (terrakotta) och återvunnet stål</li>
-                </ul>
-                <img src="images/Japanesearchitecture3.jpg" alt="Den böljande betongtrappan med små bronsankor och en varm tegelvägg i The Earth &amp; Flight House i Kamakura">
-            </article>
+        <!-- En egen beskrivning av det som syns i bilden. -->
+        <section class="card content-card">
+            <h2>En trappa med mjuka former</h2>
+            <p>Det första jag lägger märke till är trappan. Den är gjord av betong men har en mjuk, svängd form. Bakom den finns en tegelvägg som gör att materialen skiljer sig tydligt från varandra.</p>
+            <p>Ljuset kommer in uppifrån. På trappan och golvet står små ankfigurer, en detalj som gör rummet mer personligt.</p>
+            <h3>Det jag fastnar för</h3>
+            <ul>
+                <li>Kontrasten mellan betong, tegel och trä.</li>
+                <li>Hur dagsljuset framhäver trappans form.</li>
+                <li>De små detaljerna i ett stort rum.</li>
+            </ul>
+            <figure>
+                <img src="images/Japanesearchitecture3.jpg" alt="Svängd betongtrappa med metallräcke, tegelvägg och små ankfigurer" width="667" height="1000" loading="lazy">
+                <figcaption>En bildstudie av form och material. Byggnadens namn, plats och arkitekt är inte verifierade.</figcaption>
+            </figure>
         </section>
     </main>
 
+    <!-- Sidfoten avslutar sidan. -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Architectural Insight. Webbdesignprojekt om modern japansk arkitektur.</p>

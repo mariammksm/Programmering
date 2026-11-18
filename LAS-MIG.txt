@@ -1,0 +1,90 @@
+WEBBDESIGN – MARIAM KASAMBULA
+
+Öppna projektet
+1. Packa upp ZIP-filen.
+2. Öppna mappen i Visual Studio Code.
+3. Högerklicka på index.html och välj Open with Live Server.
+   Tillägget Live Server måste vara installerat.
+
+Filerna
+index.html är startsidan.
+om.html berättar om projektet och skaparen.
+projekt.html innehåller en bildstudie.
+kontakt.html innehåller e-post och länkar för vidare läsning.
+css/style.css styr utseendet på alla fyra sidor.
+js/script.js sköter knappen för större text.
+images innehåller bilder och favicon.
+
+Förstå koden inför redovisningen
+HTML beskriver innehållet. CSS bestämmer utseendet. JavaScript reagerar på klick.
+header är sidhuvudet, nav är menyn, main är huvudinnehållet och footer är sidfoten.
+Varje sida har en h1. h2 och h3 delar upp innehållet i mindre delar.
+class kan användas på flera element. id ska vara unikt på sidan.
+CSS använder punkt för class och # för id.
+Grid ordnar bildkorten i kolumner. På smala skärmar blir det en kolumn.
+Flexbox används för logotypen, menyn och knappen i sidhuvudet.
+En media query ändrar vissa avstånd när skärmen är högst 600 pixlar bred.
+alt beskriver bilderna för den som inte kan se dem.
+
+JavaScript steg för steg
+querySelector hittar knappen med id textstorlek.
+storText är en variabel som börjar som false.
+hidden = false visar knappen när JavaScript fungerar.
+addEventListener väntar på att besökaren klickar.
+if och else väljer mellan större och vanlig text.
+document.documentElement är html-elementet.
+style.fontSize ändrar dess CSS-egenskap font-size till 20px.
+Storlekar i rem följer html-elementets textstorlek.
+Ett tomt värde återställer den vanliga textstorleken.
+textContent ändrar texten på knappen.
+aria-pressed berättar för hjälpmedel om knappen är aktiverad.
+Valet återställs när en ny sida öppnas. Det sparas inte.
+
+Kontroller utförda
+Alla fyra sidor testades i Chromium vid 320, 390 och 1440 pixlars bredd.
+Kontroller: en h1 per sida, bilder laddas, lokala sidlänkar finns,
+ingen horisontell överströmning även med större text, ingen inline-CSS i HTML,
+knappen förstorar och återställer texten, inga JavaScript-fel.
+Hoppa till innehållet fungerar med tangentbord.
+Menyn fungerar även när JavaScript är avstängt.
+Startsidan har även granskats visuellt i mobil- och datorvy.
+Detta är INTE ett resultat från SkyNet Technologies Accessibility Checker.
+
+Kvar före inlämning
+1. Läs igenom och anpassa texterna. Du ska kunna förklara koden själv.
+2. Komplettera bildkällorna med fotograf, ursprungslänk och rätt att använda
+   bilderna. Bilderna är hämtade från det ursprungliga repot, men deras
+   ursprungskällor framgår inte där.
+3. Publicera den uppdaterade webbplatsen på GitHub Pages.
+4. Kör SkyNet Technologies Accessibility Checker på den publicerade sidan:
+   https://www.skynettechnologies.com/accessibility-checker
+   Kontrollera gärna alla fyra sidor. Spara skärmbilden med resultatet i
+   projektmappen. Över 75 % är önskvärt för G och över 90 % krävs för VG
+   enligt uppgiftsbeskrivningen. Inget resultat är uppmätt ännu.
+5. Skriv in den fungerande webbplatslänken i denna fil.
+6. Packa projektet igen med resultatbilden och rätt filnamn enligt kursens
+   anvisningar. Den bifogade uppgiften anger inte själva namnkonventionen.
+7. Genomför check-in och lämna in i tid.
+
+Publicera via GitHub Pages
+Lägg de fyra HTML-filerna samt mapparna css, js och images i repots rot.
+Ersätt de gamla motsvarande filerna med de uppdaterade filerna.
+I repot: Settings > Pages > Deploy from a branch > main > /(root) > Save.
+Kontrollera länken som GitHub visar när publiceringen är färdig.
+Förväntad adress, ännu inte verifierad för den uppdaterade versionen:
+https://mariammksm.github.io/Programmering/
+GitHubs anvisningar:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+Verifierad webbplatslänk: KOMPLETTERA EFTER PUBLICERING
+
+Ändringar jämfört med originalet
+Rättade en extra klammer och ..btn i CSS.
+Flyttade style-attribut från HTML till den gemensamma CSS-filen.
+Lade till större text, fokusmarkering och länk för att hoppa till innehållet.
+Anpassade menyn och korten för små skärmar.
+Komprimerade fyra bilder och lade till bildmått och rättade alternativtexter.
+Bytte obekräftade byggnadsuppgifter mot en beskrivning av det som syns.
+Lade in e-postadressen 25maka11@suni.se.
+Det gamla utkastet ArIn.html ingår inte i denna kopia av webbplatsen.
+Originalfilerna finns kvar separat. Inget har skrivits till GitHub.

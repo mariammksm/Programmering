@@ -7,28 +7,34 @@
     <title>Modern japansk arkitektur | Architectural Insight</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Länken gör det lättare att hoppa förbi menyn med tangentbord. -->
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+    <!-- Samma meny finns på alla fyra sidor. -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Architectural Insight</a>
             <nav aria-label="Huvudmeny">
                 <ul class="nav-list">
                     <li><a href="index.html" class="active" aria-current="page">Hem</a></li>
-                    <li><a href="om.html">Om arkitekturen</a></li>
-                    <li><a href="projekt.html">Ikoniska verk</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="om.html">Om</a></li>
+                    <li><a href="projekt.html">Bildstudier</a></li>
+                    <li><a href="kontakt.html">Kontakt &amp; Källor</a></li>
                 </ul>
             </nav>
+            <!-- Knappen visas när JavaScript är igång. -->
+            <button id="textstorlek" type="button" aria-pressed="false" hidden>Större text</button>
         </div>
     </header>
 
-    <main>
+    <main id="innehall" tabindex="-1">
         <section class="hero">
             <div class="container">
                 <h1>Modern japansk arkitektur</h1>
                 <p class="lead">Där traditionellt hantverk möter brutalistisk betong, naturligt ljus och minimalistisk harmoni.</p>
-                <a href="projekt.html" class="btn">Utforska ikoniska verk</a>
+                <a href="projekt.html" class="btn">Utforska bildstudier</a>
             </div>
         </section>
 
@@ -36,28 +42,30 @@
             <h2>Form, ljus och tomrum (Ma)</h2>
             <p>Modern japansk arkitektur utmärker sig genom sin förmåga att sudda ut gränsen mellan inne och ute. Genom begreppet <em>Ma</em> – det medvetna tomrummet – skapas byggnader där skuggor, årstider och material får tala.</p>
             
+            <!-- Bilderna används som inspiration, inte som identifierade byggnadsverk. -->
             <div class="grid-3">
                 <article class="card">
-                    <img src="images/Japanesearchitecture1.jpg" alt="Minimalistisk betongvägg med naturligt ljusinsläpp i Church of the Light">
-                    <h3>Betong &amp; Ljus</h3>
-                    <p>Arkitekter som Tadao Ando förvandlar rå betong till ett levande material genom precist riktat dagsljus.</p>
+                    <img src="images/Japanesearchitecture1.jpg" alt="Stenklätt bad med vatten, trätak och utsikt mot en trädgård" width="400" height="600" loading="lazy">
+                    <h3>Vatten &amp; Ljus</h3>
+                    <p>I badrummet speglas ljuset från trädgården i vattnet. Stenarna och träet ger rummet en lugn känsla.</p>
                 </article>
 
                 <article class="card">
-                    <img src="images/Japanesearchitecture2.jpg" alt="Modern träkonstruktion med sammanflätade bjälkar av Kengo Kuma">
-                    <h3>Trä &amp; Tradition</h3>
-                    <p>Kengo Kuma återupplivar uråldriga japanska träfogningstekniker i samtida kulturbyggnader.</p>
+                    <img src="images/Japanesearchitecture2.jpg" alt="Sovrum med träväggar, en rund säng och en stor trädstam" width="1000" height="500" loading="lazy">
+                    <h3>Trä &amp; Värme</h3>
+                    <p>Träpanelerna och de mörka färgerna ger sovrummet ett varmt uttryck. Trädstammen blir en tydlig del av inredningen.</p>
                 </article>
 
                 <article class="card">
-                    <img src="images/Japanesearchitecture3.jpg" alt="Tunn vit stål- och glaspaviljong i grönskande omgivning">
-                    <h3>Transparens &amp; Lätthet</h3>
-                    <p>Studion SANAA skapar viktlösa strukturer i glas och stål som smälter in i landskapet.</p>
+                    <img src="images/Japanesearchitecture3.jpg" alt="Svängd betongtrappa med metallräcke, tegelvägg och små ankfigurer" width="667" height="1000" loading="lazy">
+                    <h3>Form &amp; Material</h3>
+                    <p>Den svängda trappan bryter av mot tegelväggen. Här möts mjuka former och hårda material.</p>
                 </article>
             </div>
         </section>
     </main>
 
+    <!-- Sidfoten avslutar sidan. -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Architectural Insight. Webbdesignprojekt om modern japansk arkitektur.</p>
